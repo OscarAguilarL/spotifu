@@ -154,3 +154,27 @@ flex-direction: column-reverse;
 ```
 
 ![column-reverse](./img/col-reverse.png)
+
+## Flex Lines
+
+La propiedad flex-wrap especifica si los flex-items son obligados a permanecer en una misma linea o pueden fluir en varias lineas. Tambien permite controlar la dirección en la cual serán apilados los flex-items
+
+Los valores que puede tomar flex-wrap son:
+
+```css
+flex-wrap: nowrap
+flex-wrap: wrap
+flex-wrap: wrap-reverse
+```
+
+### nowrap
+
+Los elementos flex son distribuidos en una sola línea, lo cual puede llevar a que se desborde el contenedor flex.
+
+### wrap
+
+Los elementos flex son colocados en varias líneas.
+
+### wrap-reverse
+
+Actúa como wrap pero cross-start y cross-end están intercambiados.
