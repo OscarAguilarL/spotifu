@@ -3,6 +3,6 @@
   display: flex;
 }
 
-.displayFlex .box + .box {
+/* .displayFlex .box + .box {
   margin-inline-start: 10rem;
-}
+} */
