@@ -1,6 +1,6 @@
 .flexDirection {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   max-block-size: 200px;
   overflow: auto;
 }

@@ -1,5 +1,6 @@
 .flexOrder {
   display: flex;
+  /* Gap es un espaciado al inicio y al final de un contenedor */
   gap: 5rem;
 }
 
@@ -11,7 +12,3 @@
   border: 1px solid red;
   order: -1;
 }
-
-/* .flexOrder:nth-child(odd) img {
-  order: 2;
-} */
