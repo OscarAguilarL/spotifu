@@ -1,0 +1,32 @@
+@import "./display-flex.css";
+
+:root {
+  --darkColor: #04001e;
+  --lightColor: #dffbff;
+  --primaryColor: #db8086;
+}
+
+body {
+  background: var(--darkColor);
+  color: var(--primaryColor);
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--lightColor);
+}
+
+.wrapper {
+  max-inline-size: 64rem;
+  margin: auto;
+}
+
+.box {
+  border: 5px dashed var(--primaryColor);
+  padding: 1rem;
+  counter-increment: flex-items;
+}
+
+.box::after {
+  content: counter(flex-items);
+}
