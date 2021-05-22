@@ -178,3 +178,32 @@ Los elementos flex son colocados en varias líneas.
 ### wrap-reverse
 
 Actúa como wrap pero cross-start y cross-end están intercambiados.
+
+## Flexibilidad
+
+### FLEX-GROW
+
+Es el factor de crecimiento.
+Define la abilidad de crecer de un flex item si es necesario.
+Su valor por defecto es 0. NO se aceptan valores negativos
+
+Si todos los items tienen un flex-grow de 1, el espacio sobrante del contenedor será distribuido equitativamente a todos los hijos. Si uno de los hijos tiene un valor de 2, este ocuparía el doble de espacio que los demás.
+
+### FLEX-SHRINK
+
+Factor de reducción.
+Este define la habilidad de un elemento flexible de encogerse si es necesario.
+
+Su valor por defecto es 1. NO se aceptan valores negativos
+
+### FLEX-BASIS
+
+Define el tamaño por defecto de un elemento flexible antes de que el espacio restante sea repartido, es en relación a la linea del flex container. Es decir, si la caja tiene flex-direction de row, flex-basis representa el width o inline-size, pero si la caja tiene flex-direction de column, flex-basis representa el height o block-size.
+
+Su valor por defecto es `auto`
+
+### FLEX
+
+Es un shorthand para las ultimas 3 propiedades, se declara en el siguiente orden:
+
+flex-grow | flex-shrin | flex-basis
