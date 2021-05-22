@@ -1,3 +1,36 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Curso de Flexbox Layout y Componentes](#curso-de-flexbox-layout-y-componentes)
+  - [Convenciones de nombres populares en CSS](#convenciones-de-nombres-populares-en-css)
+    - [BEM](#bem)
+    - [SuitCSS](#suitcss)
+    - [Otras convenciones](#otras-convenciones)
+  - [Convenciones para este curso](#convenciones-para-este-curso)
+    - [Convenciones generales](#convenciones-generales)
+    - [Convenciones CSS](#convenciones-css)
+  - [Flexible Box Layout Module](#flexible-box-layout-module)
+    - [Flexbox Containers](#flexbox-containers)
+  - [Flex Layout Box Model](#flex-layout-box-model)
+  - [Orden y dirección](#orden-y-direcci%C3%B3n)
+    - [Flex Order](#flex-order)
+    - [Flex Direction](#flex-direction)
+  - [Flex Lines](#flex-lines)
+    - [nowrap](#nowrap)
+    - [wrap](#wrap)
+    - [wrap-reverse](#wrap-reverse)
+  - [Flexibilidad](#flexibilidad)
+    - [FLEX-GROW](#flex-grow)
+    - [FLEX-SHRINK](#flex-shrink)
+    - [FLEX-BASIS](#flex-basis)
+    - [FLEX](#flex)
+  - [Alineamiento](#alineamiento)
+    - [justify-content](#justify-content)
+    - [align-items](#align-items)
+    - [align-content](#align-content)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Curso de Flexbox Layout y Componentes
 
 Apuntes
@@ -207,3 +240,19 @@ Su valor por defecto es `auto`
 Es un shorthand para las ultimas 3 propiedades, se declara en el siguiente orden:
 
 flex-grow | flex-shrin | flex-basis
+
+## Alineamiento
+
+### justify-content
+
+Define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre sobrante cuando todos los elementos flexibles de una linea son inflexibles, o son flexibles pero ahan alcanzado su tamaño máximo.
+
+![justify-content](./img/justify-content.png)
+
+### align-items
+
+Define el comportamiento por defecto de la disposición de los elementos flex a lo largo del eje transversal en la línea actual.
+
+![align-items](./img/align-items.png)
+
+### align-content

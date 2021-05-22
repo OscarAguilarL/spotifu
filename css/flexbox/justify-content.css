@@ -1,0 +1,21 @@
+.justifyContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.spaceBetween ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.spaceBetween img {
+  width: 50px;
+  border-radius: 50%;
+}
