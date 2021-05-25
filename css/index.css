@@ -1,0 +1,16 @@
+@import "./icons.css";
+
+:root {
+  --primary: #00b050;
+  --white: #fff;
+  --gray10: #b3b3b3;
+  --gray20: #737373;
+  --gray30: #282828;
+  --gray40: #181818;
+  --gray50: #121212;
+  --gray60: #000000;
+}
+
+body {
+  background: var(--primary);
+}

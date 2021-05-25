@@ -1,0 +1,15 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  inline-size: 50px;
+  block-size: 50px;
+  background-size: cover;
+}
+
+.icon-home {
+  background-image: url("../images/icons/home.svg");
+}
+
+.icon-home-active {
+  background-image: url("../images/icons/home-active.svg");
+}
