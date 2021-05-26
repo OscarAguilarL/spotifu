@@ -1,4 +1,7 @@
 @import "./icons.css";
+@import "./fonts.css";
+@import "./body.css";
+@import "./link.css";
 
 :root {
   --primary: #00b050;
@@ -9,8 +12,11 @@
   --gray40: #181818;
   --gray50: #121212;
   --gray60: #000000;
-}
-
-body {
-  background: var(--primary);
+  --baseFontFamily: Avenir, Helvetica, sans-serif;
+  --headline1: bold 2rem / normal var(--baseFontFamily);
+  --headline2: bold 1.5rem/1.75rem var(--baseFontFamily);
+  --baseFont: normal 0.875rem/1.375rem var(--baseFontFamily);
+  --baseFontBold: normal 0.875rem/1.375rem var(--baseFontFamily);
+  --button: normal 0.875rem/1rem var(--baseFontFamily);
+  --small: normal 0.75em / normal var(--baseFontFamily);
 }
