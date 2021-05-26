@@ -255,4 +255,39 @@ Define el comportamiento por defecto de la disposición de los elementos flex a 
 
 ![align-items](./img/align-items.png)
 
-### align-content
+## Estilos para iconos.
+
+Existen varias maneras de agregar iconos a una página web, la más facil es usando la etiqueta <img>
+
+```html
+<img src="./img/icon.png" alt="" />
+```
+
+Otra manera de hacerlo es usando css, creando una clase para cada icon.
+Ademas de crear otro selector para darle un display de inline-block y un ancho y alto.
+
+```css
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  inline-size: 50px;
+  block-size: 50px;
+  background-size: cover;
+}
+
+.icon-home {
+  background-image: url("../images/icons/home.svg");
+}
+```
+
+Pero hay inconvenientes con estos dos métodos, asi que lo que haremos en el curso es convertir nuestros iconos en una fuente usando una herramienta llamada [icomoon.io](https://icomoon.io/app).
+
+![Icomoon](./img/icomoon.png)
+
+Primero tenemos que importar todos nuestros iconos, una vez hecho esto, como nuestros iconos tienen un color blanco, lo que vamos a hacer es quitarlo para nosotros dar el color en CSS. Para esto damos click en el boton de Edit y seleccionamos nuestro icono.
+
+![Quitar color icomoon](./img/icomoon-remove-color.png)
+
+Una vez hecho esto con todos nuestros iconos damos clic en el boton de la parte inferior que dice **_*Generate Font*_** y despues en **_*Download*_**. Descomprimimos el aarchivo resultante, copiamos la carpeta _fonts_ en la raiz de nuestro proyecto y el archivo _style.css_ (Donde estan las clases que podremos usar para usar los iconos) en nuestra carpeta de estilos.
+
+Ahora si, podemos usar nuestros iconos en nuestro proyecto :)
