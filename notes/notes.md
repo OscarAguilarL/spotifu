@@ -291,3 +291,43 @@ Primero tenemos que importar todos nuestros iconos, una vez hecho esto, como nue
 Una vez hecho esto con todos nuestros iconos damos clic en el boton de la parte inferior que dice **_*Generate Font*_** y despues en **_*Download*_**. Descomprimimos el aarchivo resultante, copiamos la carpeta _fonts_ en la raiz de nuestro proyecto y el archivo _style.css_ (Donde estan las clases que podremos usar para usar los iconos) en nuestra carpeta de estilos.
 
 Ahora si, podemos usar nuestros iconos en nuestro proyecto :)
+
+## Truncar texto
+
+Si queremos algun texto dentro de nuestra página tenga esta apariencia:
+
+![Truncar texto](./img/truncate-text.png)
+
+Es decir, que si sobrepasa el contenedor, este se oculte, tenemos que hacer lo siguiente:
+
+A nuestro texto lo vamos a envolver con una etiqueta span con clase ellipsis
+
+```html
+<span class="ellipsis">
+  <a href="#" class="link">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aut iusto
+    atque?
+  </a>
+</span>
+```
+
+Hecho esto, en la clase elipsis vamos a usar un selector para todo lo que tenga dentro de la clase elipsis y aqui es donde sucede la magia
+
+```css
+.ellipsis > * {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
+
+Aqui usamos estas propiedades, te explico porqué:
+
+- `display: block` - Esta la usamos para que nuestros elementos tengan un ancho y alto
+
+- `white-space: nowrap` - Esto hace que nuestro texto sobresalga de contenedor en caso de que sea demasiado largo
+
+- `overflow: hidden` - Para ocultar el texto que sobresale del contenedor
+
+- `text-overflow: ellipsis` - Esta propiedad es la que hace la magia, nos pone esos tres puntitos suspensivos al final del texto que hace que tenga ese efecto de que el texto es demasiado largo para mostrarse
