@@ -1,6 +1,7 @@
 .link {
   color: var(--gray10);
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .link:hover {
