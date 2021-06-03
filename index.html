@@ -1,221 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./images/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./images/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./images/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Spotifu</title>
-  </head>
-  <body class="body">
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-      perferendis minima placeat, maiores excepturi sequi. Nostrum suscipit
-      nobis aperiam eligendi, excepturi, dignissimos cum, temporibus saepe
-      fugiat voluptatem numquam? Dolore, blanditiis.
-    </p>
-    <div class="slider">
-      <div class="slider-progress">
-        <button
-          class="slider-button"
-          aria-label="Controlar el progreso de la reproducción"
-        ></button>
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>Spotifu</title>
+</head>
+
+<body class="body">
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+    perferendis minima placeat, maiores excepturi sequi. Nostrum suscipit
+    nobis aperiam eligendi, excepturi, dignissimos cum, temporibus saepe
+    fugiat voluptatem numquam? Dolore, blanditiis.
+  </p>
+
+  <div class="playerControls">
+    <div class="playerControls-buttons" aria-label="Controles de reproducción">
+      <button class="buttonIcon" aria-label="Canción anterior" title="Canción anterior">
+        <i class="icon-prev" aria-hidden="true"></i>
+      </button>
+      <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+        <i class="icon-play" aria-hidden="true"></i>
+      </button>
+      <button class="buttonIcon" aria-label="Canción siguiente" title="Canción siguiente">
+        <i class="icon-next" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="playerPlayback">
+      <span class="playerPlayback-progress">01:12</span>
+      <div class="playerPlayback-slider">
+        <div class="slider">
+          <div class="slider-progress">
+            <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+          </div>
+        </div>
+      </div>
+      <span class="playerPlayback-progress">03:25</span>
+    </div>
+  </div>
+
+  <div class="playerVolume">
+    <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+      <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i>
+    </button>
+    <div class="playerVolume-slider">
+      <div class="slider">
+        <div class="slider-progress">
+          <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="sidebar">
-      <header class="logo">
-        <a href="#" aria-current="page">
-          <img
-            src="./images/spotifu-logo.png"
-            width="112"
-            height="32"
-            alt="Logo de Spotifu"
-            class="logo-image"
-          />
-        </a>
-      </header>
-      <nav class="menu" aria-label="Principal">
-        <ul class="menu-list">
-          <li class="menuItem is-current">
-            <a class="link" href="#" aria-current="page">
-              <i class="icon-home" aria-hidden="true"></i>
-              <span>Inicio</span>
+  <div class="sidebar">
+    <header class="logo">
+      <a href="#" aria-current="page">
+        <img src="./images/spotifu-logo.png" width="112" height="32" alt="Logo de Spotifu" class="logo-image" />
+      </a>
+    </header>
+    <nav class="menu" aria-label="Principal">
+      <ul class="menu-list">
+        <li class="menuItem is-current">
+          <a class="link" href="#" aria-current="page">
+            <i class="icon-home" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a class="link" href="#" aria-current="page">
+            <i class="icon-search" aria-hidden="true"></i>
+            <span>Buscar</span>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a class="link" href="#" aria-current="page">
+            <i class="icon-creditCard" aria-hidden="true"></i>
+            <span>Premium</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="list" aria-labelledby="library-navigation">
+      <h2 class="list-title" id="library-navigation">Tu Biblioteca</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <span class="ellipsis">
+            <a class="link" href="#">Creada para ti</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Escuchado recientemente</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Tus Me Gusta</a>
+          </span>
+        </li>
+      </ul>
+    </nav>
+    <nav class="list" aria-labelledby="playlists-navigation">
+      <h2 class="list-title" id="playlists-navigation">Playlists</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <span class="ellipsis">
+            <a class="link" href="#">Hola Beats Lofi</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">lofi hip hop music</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">This Is Linkin Park</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Hard Rock</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Rock que no conoces</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">Metal que no conoces</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">All Of Me</a>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="ellipsis">
+            <a href="#" class="link">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Delectus aut iusto atque?
             </a>
-          </li>
-          <li class="menuItem">
-            <a class="link" href="#" aria-current="page">
-              <i class="icon-search" aria-hidden="true"></i>
-              <span>Buscar</span>
-            </a>
-          </li>
-          <li class="menuItem">
-            <a class="link" href="#" aria-current="page">
-              <i class="icon-creditCard" aria-hidden="true"></i>
-              <span>Premium</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="list" aria-labelledby="library-navigation">
-        <h2 class="list-title" id="library-navigation">Tu Biblioteca</h2>
-        <ul class="list-content">
-          <li class="list-item">
-            <span class="ellipsis">
-              <a class="link" href="#">Creada para ti</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">Escuchado recientemente</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">Tus Me Gusta</a>
-            </span>
-          </li>
-        </ul>
-      </nav>
-      <nav class="list" aria-labelledby="playlists-navigation">
-        <h2 class="list-title" id="playlists-navigation">Playlists</h2>
-        <ul class="list-content">
-          <li class="list-item">
-            <span class="ellipsis">
-              <a class="link" href="#">Hola Beats Lofi</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">lofi hip hop music</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">This Is Linkin Park</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">Hard Rock</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">Rock que no conoces</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">Metal que no conoces</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">All Of Me</a>
-            </span>
-          </li>
-          <li class="list-item">
-            <span class="ellipsis">
-              <a href="#" class="link">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus aut iusto atque?
-              </a>
-            </span>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-    <button
-      class="buttonIcon is-white"
-      aria-label="Reproducir"
-      title="Reproducir"
-    >
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
-    <button
-      class="buttonIcon is-primary"
-      aria-label="Reproducir"
-      title="Reproducir"
-    >
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
-    <button class="buttonIcon" aria-label="Reproducir" title="Reproducir">
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
-  </body>
+</body>
+
 </html>
