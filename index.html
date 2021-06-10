@@ -28,16 +28,34 @@
 
 <body class="body">
 
-  <form action="" class="search" role="search" aria-label="Buscar artistas, canciones o podcasts">
-    <i class="icon-search" aria-hidden="true"></i>
-    <input type="search" name="" id="" placeholder="Artistas, canciones o podcasts">
-  </form>
+  <header class="header sticky" aria-label="Barra superior y menu del usuario">
+    <div class="navigation">
+      <button class="navigation-prev" aria-label="Volver" title="Volver">
+        <i class="icon-arrowLeft" aria-hidden="true"></i>
+      </button>
+      <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+        <i class="icon-arrowRight" aria-hidden="true"></i>
+      </button>
+    </div>
+    <form action="" class="search" role="search" aria-label="Buscar artistas, canciones o podcasts">
+      <i class="icon-search" aria-hidden="true"></i>
+      <input type="search" name="" id="" placeholder="Artistas, canciones o podcasts">
+    </form>
+  </header>
 
   <section class="playlistList" aria-labelledby="region1">
     <div class="playlistList-top">
       <h2 class="playlistList-title" id="region1">
         Buenas noches
       </h2>
+      <div class="navigation">
+        <button class="navigation-prev" aria-label="Volver" title="Volver">
+          <i class="icon-arrowLeft" aria-hidden="true"></i>
+        </button>
+        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+          <i class="icon-arrowRight" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div class="playlistList-container">
       <div class="playlistB">
@@ -174,6 +192,14 @@
       <h2 class="playlistList-title" id="region2">
         Escuchado recientemente
       </h2>
+      <div class="navigation">
+        <button class="navigation-prev" aria-label="Volver" title="Volver">
+          <i class="icon-arrowLeft" aria-hidden="true"></i>
+        </button>
+        <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+          <i class="icon-arrowRight" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div class="playlistList-container">
       <div class="playlistA">
