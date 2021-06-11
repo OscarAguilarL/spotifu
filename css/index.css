@@ -10,6 +10,7 @@
 @import "./page.css";
 @import "./layout.css";
 @import "./scrollbar.css";
+@import "./filter.css";
 @import "./song-list.css";
 
 :root {

@@ -1,9 +1,9 @@
-.search {
+.filter {
   position: relative;
   flex: 1;
 }
 
-.search i {
+.filter i {
   position: absolute;
   font-size: 1rem;
   left: 0.5rem;
@@ -11,21 +11,22 @@
   block-size: 1rem;
 }
 
-.search input {
+.filter input {
+  background: none;
   font: var(--baseFont);
   color: var(--gray30);
   border-radius: 1.25rem;
+  padding: 0.5rem;
+  padding-inline-start: 2rem;
   border: none;
   max-inline-size: 22rem;
   inline-size: 100%;
-  padding: 0.5rem;
-  padding-inline-start: 2rem;
 }
 
-.search:focus-within i {
-  color: var(--gray30);
+.filter:focus-within i {
+  color: var(--gray10);
 }
 
-.search input::-webkit-input-placeholder {
+.filter input::-webkit-input-placeholder {
   color: var(--gray10);
 }
