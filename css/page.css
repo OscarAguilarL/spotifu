@@ -16,6 +16,10 @@
   gap: 2rem;
 }
 
+.page-block-song {
+  gap: 1.5rem;
+}
+
 .page .header {
   margin-block-end: 1rem;
   margin-inline-end: -1.5rem;

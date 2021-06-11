@@ -3,6 +3,7 @@
 @import "./body.css";
 @import "./link.css";
 @import "./button-icon.css";
+@import "./button.css";
 @import "./sidebar.css";
 @import "./elipsis.css";
 @import "./slider.css";
@@ -12,6 +13,7 @@
 @import "./scrollbar.css";
 @import "./filter.css";
 @import "./song-list.css";
+@import "./page-song-info.css";
 
 :root {
   font-size: 16px;
