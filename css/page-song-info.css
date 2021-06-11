@@ -1,0 +1,21 @@
+.page {
+  background-image: linear-gradient(
+      181.17deg,
+      rgba(47, 47, 47, 0) -35.3%,
+      #171717 66.2%
+    ),
+    url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.page-songInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block-start: 5rem;
+  padding-block-end: 1rem;
+  color: var(--white);
+}

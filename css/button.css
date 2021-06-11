@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  background: none;
+  color: var(--white);
+  inline-size: 8.5rem;
+  block-size: 2rem;
+  border-radius: 3.8rem;
+  font: var(--button);
+  cursor: pointer;
+}
+
+.btn.is-primary {
+  background: var(--primary);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover:is([class*="is-"]) {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
