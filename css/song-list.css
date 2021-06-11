@@ -1,0 +1,33 @@
+.songList-head {
+  display: flex;
+  align-items: center;
+  color: var(--gray10);
+}
+
+.songList-song {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.songList-play,
+.songList-fav {
+  min-inline-size: 2.75rem;
+}
+
+.songList-title {
+  min-inline-size: 20rem;
+}
+
+.songList-artist,
+.songList-album {
+  min-inline-size: 16.875rem;
+}
+
+.songList-date {
+  min-inline-size: 5.75rem;
+}
+
+.songList-duration {
+  min-inline-size: 3rem;
+}

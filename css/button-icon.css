@@ -18,6 +18,13 @@
   color: var(--white);
 }
 
+.buttonIcon.is-secondary {
+  color: var(--white);
+  border: 1px solid var(--white);
+  inline-size: 2rem;
+  block-size: 2rem;
+}
+
 .buttonIcon .icon-play {
   position: relative;
   left: 1px;
